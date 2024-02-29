@@ -87,14 +87,14 @@
                         <img class="mx-1" src="{% static "deps/icons/grid-fill.svg" %}" alt="Catalog Icon" width="16"
                             height="16">
                     </button>
-                    <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="#">Все товары</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Кухня</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Спальня</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Гостинная</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Офис</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Фурнитура</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Декор</a></li>
+                   <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Витамины и минералы</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Креатин</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Предтренировочные комплексы</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Протеин</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Препараты для суставов</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Жиросжигатели</a></li>
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Все товары</a></li>
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
