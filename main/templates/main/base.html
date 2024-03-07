@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static "deps/favicon/favicon-32x32.png" %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "deps/favicon/favicon-16x16.png" %}">
     <link rel="manifest" href="{% static "deps/favicon/site.webmanifest" %}">
-    <title>{{ title }}</title>
+    <title>{{title}}</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
                                 <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
                                 <li><a class="dropdown-item  text-white" href="users/profile.html">Личный кабинет</a>
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="#">Админ панель</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "admin:index" %}">Админ панель</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -88,13 +88,9 @@
                             height="16">
                     </button>
                    <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Витамины и минералы</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Креатин</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Предтренировочные комплексы</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Протеин</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Препараты для суставов</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Жиросжигатели</a></li>
-                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Все товары</a></li>
+                    {% for category in categoryes %}
+                       <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">{{category.name}}</a></li>
+                    {% endfor %}
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
