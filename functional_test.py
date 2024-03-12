@@ -1,14 +1,21 @@
-import time
-
 # webdriver это и есть набор команд для управления браузером
 from selenium import webdriver
+import unittest
 
-# импортируем класс By, который позволяет выбрать способ поиска элемента
-from selenium.webdriver.common.by import By
+class FunctionalStore(unittest.TestCase):
+    '''тест функциональности магазина'''
 
-# инициализируем драйвер браузера. После этой команды вы должны увидеть новое открытое окно браузера
-browser = webdriver.Chrome()
+    def setUp(self):
+        self.browser = webdriver.Firefox()
 
-browser.get('http://localhost:8000')
+    def tearDown(self):
+        self.browser.quit()
 
-assert 'Sport Food' in browser.title
+    def test_home_start(self):
+         self.browser.get('http://localhost:8000')
+
+         self.assertIn('Sport Foods', self.browser.title)
+         self.fail('Закончить тест!')
+
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')

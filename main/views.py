@@ -1,11 +1,11 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 
 from products.models import Categories
 
 # Create your views here.
-def index(request):
-
+def index(request: HttpRequest):
+    print(request.GET)
     categories = Categories.objects.all()
     context = {
         'title': "Sport Food",
