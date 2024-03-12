@@ -1,0 +1,20 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$fqZmaUDJK8GhHAr5y4FEQo$W38BbKSGaZCtenN9aYMajiHY2n5XuT+uPCZEf6Ivr6k=",
+            "last_login": "2024-03-12T05:42:33.056Z",
+            "is_superuser": true,
+            "username": "food_store_habstudio",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-03-05T07:03:36.647Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

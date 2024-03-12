@@ -1,1 +1,58 @@
-[{"model": "products.categories", "pk": 2, "fields": {"name": "Все товары", "slug": "all"}}, {"model": "products.categories", "pk": 3, "fields": {"name": "Витамины и минералы", "slug": "Vitamins-and-minerals"}}, {"model": "products.categories", "pk": 4, "fields": {"name": "Креатин", "slug": "creatine"}}, {"model": "products.categories", "pk": 5, "fields": {"name": "Предтренировочный комплекс", "slug": "Predtren-complex"}}, {"model": "products.categories", "pk": 6, "fields": {"name": "Жиросжигатели", "slug": "Zgirotop"}}, {"model": "products.categories", "pk": 7, "fields": {"name": "Протеин", "slug": "Protein"}}, {"model": "products.categories", "pk": 8, "fields": {"name": "Препараты для суставов и связок", "slug": "Flex"}}]
+[
+    {
+        "model": "products.categories",
+        "pk": 2,
+        "fields": {
+            "name": "Все товары",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 3,
+        "fields": {
+            "name": "Витамины и минералы",
+            "slug": "Vitamins-and-minerals"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 4,
+        "fields": {
+            "name": "Креатин",
+            "slug": "creatine"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 5,
+        "fields": {
+            "name": "Предтренировочный комплекс",
+            "slug": "Predtren-complex"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 6,
+        "fields": {
+            "name": "Жиросжигатели",
+            "slug": "Zgirotop"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 7,
+        "fields": {
+            "name": "Протеин",
+            "slug": "Protein"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 8,
+        "fields": {
+            "name": "Препараты для суставов и связок",
+            "slug": "Flex"
+        }
+    }
+]
